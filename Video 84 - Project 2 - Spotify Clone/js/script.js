@@ -43,10 +43,11 @@ async function getSongs(folder) {
                                 <div> ${song.replaceAll("%20", " ")}</div>
                                 <div>Harry</div>
                             </div>
-                            <div class="playnow">
+                          <div class="playnow">
                                 <span>Play Now</span>
-                                <img class="invert" src="img/play.svg" alt="">
-                            </div> </li>`;
+                                <img class="items-invert" src="img/playsong.svg" alt="">
+                                <a href="${song.replaceAll("%20", " ")}" download="${song.replaceAll("%20", " ")}"> <img class="items-invert" src="img/download.svg" alt=""></a>
+                            </div> </li>`;;
     }
 
     // Attach an event listener to each song
